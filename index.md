@@ -162,8 +162,8 @@ address.
 </p>
 {% elsif online == "true_private" %}
 <p id="where">
-  <strong>Where:</strong> This training will take place online.
-  The instructors will provide you with the information you will need to connect to this meeting.
+  <strong>Wo:</strong> Dieser Workshop findet online statt.
+  Die Instructor und Workshop-Hosts werden Ihnen die Informationen geben, die Sie für die Teilnahme an diesem Treffen benötigen.
 </p>
 {% endif %}
 
@@ -174,7 +174,7 @@ This block displays the date and links to Google Calendar.
 {% endcomment %}
 {% if page.humandate %}
 <p id="when">
-  <strong>When:</strong>
+  <strong>Wann:</strong>
   {{page.humandate}}.
   {% include workshop_calendar.html %}
 </p>
@@ -186,15 +186,15 @@ SPECIAL REQUIREMENTS
 Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
-  <strong>Requirements:</strong>
+  <strong>Anforderungen:</strong>
   {% if online == "false" %}
-    Participants must bring a laptop with a
-    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
+    Die Teilnehmer:innen müssen einen Laptop mit einem
+    Mac-, Linux- oder Windows-Betriebssystem (kein Tablet, Chromebook usw.) mitbringen, auf dem sie über administrative Rechte verfügen.
   {% else %}
-    Participants must have access to a computer with a
-    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
+    Die Teilnehmer:innen müssen einen Laptop mit einem
+    Mac-, Linux- oder Windows-Betriebssystem (kein Tablet, Chromebook usw.) mitbringen, auf dem sie über administrative Rechte verfügen.
   {% endif %}
-  They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+   Sie sollten einige spezielle Softwarepakete installiert haben (siehe <a href="#setup">unten</a>).
 </p>
 
 {% comment %}
@@ -204,7 +204,7 @@ Modify the block below if there are any barriers to accessibility or
 special instructions.
 {% endcomment %}
 <p id="accessibility">
-  <strong>Accessibility:</strong>
+  <strong>Zugänglichkeit:</strong>
 {% if online == "false" %}
   We are committed to making this workshop
   accessible to everybody.  For workshops at a physical location, the workshop organizers have checked that:
@@ -222,13 +222,14 @@ special instructions.
   attempt to provide them.
 </p>
 {% else %}
-  We are dedicated to providing a positive and accessible learning environment for all. 
-  We do not require participants to provide documentation of disabilities or disclose any unnecessary personal information. 
-  However, we do want to help create an inclusive, accessible experience for all participants. 
-  We encourage you to share any information that would be helpful to make your Carpentries experience accessible.
-  To request an accommodation for this workshop, please fill out the 
-  <a href="https://carpentries.typeform.com/to/B2OSYaD0">accommodation request form</a>.
-  If you have questions or need assistance with the accommodation form please <a href="mailto:team@carpentries.org">email us</a>.
+  Wir sind bestrebt, ein positives und zugängliches Lernumfeld für alle zu schaffen. 
+  Wir verlangen von den Teilnehmer:innen keine Unterlagen über Behinderungen oder die Offenlegung unnötiger persönlicher Informationen. 
+  Wir möchten jedoch dazu beitragen, dass alle Teilnehmer:innen ein integratives, zugängliches Erlebnis haben. 
+  Wir ermutigen Sie, uns alle Informationen mitzuteilen, die hilfreich sind, um Ihre Carpentries-Erfahrung zugänglich zu machen.
+  Um eine Hilfsmittel für diesen Workshop zu beantragen, füllen Sie bitte das  
+  <a href="https://carpentries.typeform.com/to/B2OSYaD0"> Formular zur Beantragung</a> aus.
+  Wenn Sie Fragen haben oder Hilfe beim Ausfüllen des Formulars benötigen, schreiben Sie uns bitte eine <a href="mailto:team@carpentries.org">E-Mail</a> 
+  an uns.
 </p>
 {% endif %}
 
@@ -238,8 +239,8 @@ CONTACT EMAIL ADDRESS
 Display the contact email address set in the configuration file.
 {% endcomment %}
 <p id="contact">
-  <strong>Contact:</strong>
-  Please email
+  <strong>Kontakt:</strong>
+  Schreiben Sie an
   {% if page.email %}
   {% for email in page.email %}
   {% if forloop.last and page.email.size > 1 %}
@@ -258,9 +259,9 @@ Display the contact email address set in the configuration file.
 </p>
 
 <p id="roles">
-  <strong>Roles:</strong>
-  To learn more about the roles at the workshop (who will be doing what),
-  refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
+  <strong>Rollen:</strong>
+  Um mehr über die Rollen beim Workshop zu erfahren (wer was macht),
+  lesen Sie <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">unsere Workshop-FAQs</a>.
 </p>
 
 {% comment %}
@@ -292,12 +293,12 @@ CODE OF CONDUCT
 <h2 id="code-of-conduct">Code of Conduct</h2>
 
 <p>
-Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. This document also outlines how to report an incident if needed.
+Jeder, der an den Aktivitäten von The Carpentries teilnimmt, ist verpflichtet, den <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Verhaltenskodex</a> einzuhalten. In diesem Dokument wird auch beschrieben, wie ein Vorfall zu melden ist.
 </p>
 
 <p class="text-center">
   <a href="https://goo.gl/forms/KoUfO53Za3apOuOK2">
-    <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
+    <button type="button" class="btn btn-info">Einen Code of Conduct Vorfall melden</button>
   </a>
 </p>
 <hr/>
