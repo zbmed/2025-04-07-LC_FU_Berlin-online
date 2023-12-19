@@ -81,7 +81,7 @@ displayed if the 'eventbrite' field in the header is not set.
 {% endif %}
 
 
-<h2 id="general">General Information</h2>
+<h2 id="general">Allgemeine Informationen</h2>
 
 {% comment %}
 INTRODUCTION
@@ -91,15 +91,14 @@ the pitch.
 {% endcomment %}
 
 <p>
-<strong><a href="https://carpentries.org">The Carpentries</a></strong> project comprises the <a
-href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, and
-<a href="{{site.lc_site}}">Library Carpentry</a> communities of Instructors, Trainers, Maintainers,
-helpers, and supporters who share a mission to teach foundational computational and data science
-skills to researchers.
+<strong><a href="https://carpentries.org">Das Carpentries</a></strong> Projekt umfasst die <a
+href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, und
+<a href="{{site.lc_site}}">Library Carpentry</a> Communities von Instructor, Trainer, Maintainer,
+Helper und Supporter, die sich zum Ziel gesetzt haben, Forschenden Grundkenntnisse in Informatik und Datenwissenschaft zu vermitteln.
 <p align="center">
   <em>
-  <strong>Want to learn more and stay engaged with The Carpentries?</strong> Carpentries Clippings is The Carpentries' biweekly newsletter, where we share community news, community job postings, and more.
-Sign up to receive future editions and read our full archive: <a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
+  <strong>Möchten Sie mehr erfahren und mit The Carpentries verbunden bleiben?</strong> Carpentries Clippings ist der zweiwöchentlich erscheinende Newsletter von The Carpentries, in dem wir Neuigkeiten aus der Community, Stellenausschreibungen und vieles mehr mitteilen.
+Melden Sie sich an, um künftige Ausgaben zu erhalten und unser vollständiges Archiv zu lesen: <a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
   </em>
 </p>
 {% if site.carpentry == "swc" %}
@@ -318,10 +317,10 @@ Note we also have a CodiMD (the open-source version of HackMD)
 available at https://codimd.carpentries.org
 {% endcomment %}
 {% if page.collaborative_notes %}
-<h2 id="collaborative_notes">Collaborative Notes</h2>
+<h2 id="collaborative_notes">Kollaboratives Pad</h2>
 
 <p>
-We will use this <a href="{{ page.collaborative_notes }}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
+Wir werden dieses <a href="{{ page.collaborative_notes }}">kollaborative Dokument</a> zum Chatten, für Notizen und zum Austausch von URLs und Codeblöcken verwenden.
 </p>
 <hr/>
 {% endif %}
@@ -330,8 +329,8 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 {% comment %}
 SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
-<h2 id="surveys">Surveys</h2>
-<p>Please be sure to complete these surveys before and after the workshop.</p>
+<h2 id="surveys">Umfragen</h2>
+<p>Bitte stellen Sie sicher, dass Sie diese Umfragen vor und nach dem Workshop ausfüllen.</p>
 {% if site.carpentry == "incubator" %}
 <p><a href="{{ site.incubator_pre_survey }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.incubator_post_survey }}">Post-workshop Survey</a></p>
@@ -415,7 +414,7 @@ please preview your site before committing, and make sure to run
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a
+  Zur Teilnahme an einem
   {% if site.carpentry == "swc" %}
   Software Carpentry
   {% elsif site.carpentry == "dc" %}
@@ -423,14 +422,14 @@ please preview your site before committing, and make sure to run
   {% elsif site.carpentry == "lc" %}
   Library Carpentry
   {% endif %}
-  workshop,
-  you will need access to software as described below.
-  In addition, you will need an up-to-date web browser.
+  Workshop,
+  benötigen Sie Zugang zu der unten beschriebenen Software.
+  Darüber hinaus benötigen Sie einen aktuellen Webbrowser.
 </p>
 <p>
-  We maintain a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
-  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+  Wir führen eine Liste mit häufigen Problemen, die während der Installation auftreten, als Referenz für Instructor
+  die nützlich sein können auf der
+  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Konfigurationsprobleme und Lösungen Wiki-Seite</a>.
 </p>
 
 {% comment %}
