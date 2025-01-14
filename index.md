@@ -237,25 +237,15 @@ CONTACT EMAIL ADDRESS
 
 Display the contact email address set in the configuration file.
 {% endcomment %}
+
 <p id="contact">
   <strong>Kontakt:</strong>
-  Schreiben Sie an
-  {% if page.email %}
-  {% for email in page.email %}
-  {% if forloop.last and page.email.size > 1 %}
-  or
-  {% else %}
-  {% unless forloop.first %}
-  ,
-  {% endunless %}
-  {% endif %}
-  <a href='mailto:{{email}}'>{{email}}</a>
-  {% endfor %}
-  {% else %}
-  to-be-announced
-  {% endif %}
-  for more information.
+  Für weitere Informationen und zur Anmeldung besuchen Sie bitte die folgende Seite: 
+  <a href="https://veranstaltung.weiterbildung.fu-berlin.de/Veranstaltung/cmx6667ee62016bb.html" target="_blank">
+    Veranstaltung auf der Webseite der Weiterbildung der FU Berlin
+  </a>.
 </p>
+
 
 <p id="roles">
   <strong>Rollen:</strong>
